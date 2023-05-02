@@ -1,0 +1,50 @@
+@import (reference) "../../variables.less";
+@import (reference) "../../mixin.less";
+
+:host {
+  font-family: 'Poppins', sans-serif;
+  .note-list {
+    gap: 16px;
+    border: 1px solid #000000;
+    border-radius: 16px;
+  }
+  .header {
+    .flex-center();
+    background-color: @blue;
+    color: @white;
+    padding: 0 24px;
+    gap: 8px;
+    .border-radius-m();
+    height: 80px;
+    h4 {
+      flex-grow: 1;
+    }
+
+    .circle {
+      .flex-center();
+      justify-content: center;
+      .border-radius-l();
+      background-color: @green;
+      height: 40px;
+      width: 40px;
+      color: @blue;
+    }
+  }
+
+  .note-tile-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .note-input {
+    background-color: @blue;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: @white;
+  }
+}

@@ -1,0 +1,21 @@
+@import (reference) "../../variables.less";
+@import (reference) "../../mixin.less";
+
+:host {
+
+  .note-tile {
+    //.flex-center();
+    //justify-content: space-between;
+    //padding: 16px;
+    background: @lightGray;
+    //height: 40px;
+    .border-radius-s();
+  }
+  .done-btn {
+    height: 20px;
+    width: 20px;
+    .border-radius-l();
+    display: block;
+    border: 2px solid @blue;
+  }
+}
