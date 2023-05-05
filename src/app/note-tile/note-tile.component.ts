@@ -11,7 +11,7 @@ export class NoteTileComponent implements OnInit {
   public content = '';
 
   @Input()
-  public status = STATUS.TODO;
+  public isCompleted?: boolean;
 
   constructor() { }
 
@@ -21,9 +21,4 @@ export class NoteTileComponent implements OnInit {
   clickDone() {
     console.log("I click on it!!")
   }
-}
-
-enum STATUS {
-  TODO,
-  DONE
 }

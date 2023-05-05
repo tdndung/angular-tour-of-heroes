@@ -4,15 +4,12 @@
         <h4>Dung's Note</h4>
         <div class="circle"><span class="number">5</span></div>
       </div>
-
       <div class="flex flex-col flex-1">
-        <div class="note-tile-wrapper flex-1" *ngIf="">
-          <app-note-tile [content]="'Homework'" [status]="1"></app-note-tile>
-          <app-note-tile [content]="'ddddđ'" [status]="2"></app-note-tile>
-          <app-note-tile [content]="'rrrrrrrr'" [status]="1"></app-note-tile>
-          <app-note-tile [content]="'ggggggg'" [status]="1"></app-note-tile>
-        </div>
-
+          <ul class="note-tile-wrapper flex-1">
+            <li *ngFor="let task of allTasks">
+              <app-note-tile content="{{task.content}}" [isCompleted]=task.isCompleted></app-note-tile>
+            </li>
+          </ul>
         <div>
           <textarea class="note-input" autofocus placeholder="'Type here...'"> </textarea>
         </div>

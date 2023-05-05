@@ -1,4 +1,4 @@
-<div class="note-tile h-10 p-4 flex items-center justify-between">
+<div class="note-tile h-12 p-4 flex items-center justify-between {{ isCompleted ? 'is-completed-task' : 'is-not-completed'}}">
   <span class="content">{{content}}</span>
-  <span class="done-btn" (click)="clickDone()"></span>
+  <span class="done-btn  {{ isCompleted ? 'hidden' : ''}}" (click)="clickDone()"></span>
 </div>
