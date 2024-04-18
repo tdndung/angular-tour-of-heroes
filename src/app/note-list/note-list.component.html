@@ -10,20 +10,18 @@
     </div>
     <div class="flex flex-col flex-1">
       <ul class="note-tile-wrapper flex-1">
-        <li *ngFor="let task of allTasks">
-          <app-note-tile content="{{task.content}}" [isCompleted]=task.isCompleted></app-note-tile>
-        </li>
+<!--        <li *ngFor="let task of allTasks">-->
+<!--          <app-note-tile content="{{task.content}}" [isCompleted]=task.isCompleted></app-note-tile>-->
+<!--        </li>-->
       </ul>
       <div>
-        <div id="create-task-btn" class="create-task-btn flex justify-center items-center float-right"><a
-          (click)="toggleCreateTaskBtn()">
+        <div id="create-task-btn" class="create-task-btn flex justify-center items-center float-right"><a>
           <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
           </svg>
         </a></div>
 
-        <textarea id="task-input" class="task-input hidden" autofocus placeholder="'Type here...'"
-                  #myTextarea (keydown.enter)="onEnter($event)"> </textarea>
+        <textarea id="task-input" class="task-input hidden" autofocus placeholder="'Type here...'"> </textarea>
       </div>
     </div>
   </div>
