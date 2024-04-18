@@ -8,13 +8,6 @@
     flex-direction: column;
     gap: 16px;
   }
-  //.note-tile {
-  //  background: @lightGray;
-  //}
-  //
-  //.is-completed-task {
-  //  background-color: rgba(185, 211, 202, 0.5);
-  //}
   .note {
     display: flex;
     align-items: center;
@@ -22,7 +15,12 @@
     color: rgb(148,163,184);
     background-image: linear-gradient(to right, #ffffff12, #222d3429);
     border-radius: 40px 8px 8px 40px;
+    transition: box-shadow 0.8s;
+    &:hover {
+      box-shadow: 0px 1px;
+    }
   }
+
   .prefix {
     height: 40px;
     width: 40px;

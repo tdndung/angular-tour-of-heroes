@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Note} from "../note.service";
 
 @Component({
   selector: 'app-note-tile',
@@ -8,10 +9,13 @@ import {Component, Input, OnInit} from '@angular/core';
 export class NoteTileComponent implements OnInit {
 
   @Input()
-  public content = '';
+  public notes!: Note[];
 
-  @Input()
-  public isCompleted?: boolean;
+  // @Input()
+  // public content = '';
+  //
+  // @Input()
+  // public isCompleted?: boolean;
 
   constructor() { }
 
