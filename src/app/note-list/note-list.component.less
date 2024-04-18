@@ -7,28 +7,8 @@
     gap: 16px;
     border: 1px solid #000000;
     border-radius: 16px;
-  }
-  .header {
-    .flex-center();
-    background-color: @blue;
-    color: @white;
-    padding: 0 24px;
-    gap: 8px;
-    .border-radius-m();
-    height: 80px;
-    h4 {
-      flex-grow: 1;
-    }
-
-    .circle {
-      .flex-center();
-      justify-content: center;
-      .border-radius-l();
-      background-color: @green;
-      height: 40px;
-      width: 40px;
-      color: @blue;
-    }
+    background-image: url("src/assets/images/background.png");
+    background-size: cover;
   }
 
   .note-tile-wrapper {
@@ -38,7 +18,7 @@
     gap: 16px;
   }
 
-  .note-input {
+  .task-input {
     background-color: @blue;
     height: 100px;
     width: 100%;
@@ -46,5 +26,27 @@
     padding: 0;
     border: 0;
     color: @white;
+  }
+
+  .circle-progress-bar {
+    background: conic-gradient(@green 110deg, grey 0);
+    width: 75px;
+    height: 75px;
+    img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+
+    }
+  }
+
+  .create-task-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: @blue-green;
+  }
+  .task-input {
+    //display: none;
   }
 }
