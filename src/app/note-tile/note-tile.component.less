@@ -2,12 +2,34 @@
 @import (reference) "../../mixin.less";
 
 :host {
-
-  .note-tile {
-    background: @lightGray;
+  .note-tile-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
-
-  .is-completed-task {
-    background-color: rgba(185, 211, 202, 0.5);
+  //.note-tile {
+  //  background: @lightGray;
+  //}
+  //
+  //.is-completed-task {
+  //  background-color: rgba(185, 211, 202, 0.5);
+  //}
+  .note {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: rgb(148,163,184);
+    background-image: linear-gradient(to right, #ffffff12, #222d3429);
+    border-radius: 40px 8px 8px 40px;
+  }
+  .prefix {
+    height: 40px;
+    width: 40px;
+    background-color: #53778B;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: floralwhite;
   }
 }
